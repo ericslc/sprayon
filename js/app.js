@@ -1,16 +1,14 @@
-angular.module('spray', ['ui-router'])
-
-angular.module('spray', .config(function($stateProvider, $urlRouterProvider) {
+angular.module('spray', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: './views/home.html',
+      templateUrl: '/views/home.html',
       controller: 'sprayctrl',
     })
     .state('about', {
       url: '/about',
-      templateUrl: './views/about.html',
+      templateUrl: '/views/about.html',
       controller: 'sprayctrl'
     })
     .state('product1', {
@@ -28,9 +26,9 @@ angular.module('spray', .config(function($stateProvider, $urlRouterProvider) {
       templateUrl: './views/product3.html',
       controller: 'sprayctrl'
     })
-    .state('ourwork', {
-      url: '/ourwork',
-      templateUrl:'./views/ourwork.html',
+    .state('portfolio', {
+      url: '/portfolio',
+      templateUrl:'./views/portfolio.html',
       controller: 'sprayctrl'
     })
     $urlRouterProvider.otherwise('/');
