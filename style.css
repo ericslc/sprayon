@@ -30,11 +30,15 @@ body {
 {
 	background-color: #000000;
 }
+h1{
+  font-weight: bold;
+  text-align: center;
+}
 
 .home {
     text-align: center;
     color: black;
-    height: 700px;
+    height: 200px;
     width: 100%;
     background-size: 100% 100%;
     display: flex;
@@ -42,3 +46,50 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .parallax {
+    /* The image used */
+    background-image: url("photos/Utah performing arts/fireproofing/20161007_195340.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+  /* The image used */
+  background-image: url("photos/Utah performing arts/Intumescent paint/2015-07-23 09.25.35.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("http://www.riseandshinegroup.com/home/uploads/spraycontec2.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.fireproofing{
+  margin-top: 50px;
+}

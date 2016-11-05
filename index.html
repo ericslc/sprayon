@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="spray">
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.js">
 <link rel="stylesheet" href="/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta charset="utf-8">
 <title>SprayOn</title>
 </head>
 <body ng-controller="sprayctrl">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Spray-On Solutions</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="about">About Us</a></li>
+          <li><a ui-sref="fireproofing">Fire Proofing</a></li>
+          <li><a ui-sref="intumescent">Intumescent Paint</a></li>
+          <li><a ui-sref="insulation">Insulation</a></li>
+          <li><a ui-sref="portfolio">Projects</a></li>
+          <li><a ui-sref="contact">Contact Us</a></li>
+</li>
+        </ul>
+      </div>
+    </nav>
+
+
 <ui-view></ui-view>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
