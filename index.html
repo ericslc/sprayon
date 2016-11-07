@@ -13,7 +13,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand">Spray-On Solutions</a>
+          <a class="navbar-brand" href="#">Spray-On Solutions</a>
         </div>
         <ul class="nav navbar-nav">
           <li><a ui-sref="home">Home</a></li>
@@ -21,7 +21,14 @@
           <li><a ui-sref="fireproofing">Fire Proofing</a></li>
           <li><a ui-sref="intumescent">Intumescent Paint</a></li>
           <li><a ui-sref="insulation">Insulation</a></li>
-          <li><a ui-sref="portfolio">Projects</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ui-sref="portfolio">Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a ui-sref="elizabeth">Elizabeth Academy</a></li>
+              <li><a ui-sref="jvhospital">Jordan Valley Hospital</a></li>
+              <li><a ui-sref="livingplanet">Living Planet Aquarium</a></li>
+              <li><a ui-sref="usurec">USU Rec Center</a></li>
+              <li><a ui-sref="performingarts">Utah Performing Arts Center</a></li>
+            </ul>
           <li><a ui-sref="contact">Contact Us</a></li>
 </li>
         </ul>
