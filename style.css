@@ -31,6 +31,13 @@ body {
 {
 	background-color: #000000;
 }*/
+/* main paragraph and header settings */
+.text {
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+  }
 
 p {
   width: 80%;
@@ -42,36 +49,20 @@ p {
 h1{
   font-weight: bold;
   text-align: center;
+  font:  "Lato", sans-serif;
+  color: #111;
 }
 
-.home {
-  background-color: white;
+h4 {
+  font-weight: bold;
   text-align: center;
-  padding: 50px 80px;
-  text-align: justify;
-  height: 300px;
-  }
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  border-radius: 10px;
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-  opacity: .8;
+  font:  "Lato", sans-serif;
+  color: #111;
 }
 
 h3 {
+  font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   font:  "Lato", sans-serif;
   color: #111;
@@ -80,43 +71,12 @@ h3 {
 h2 {
   font-weight: bold;
   text-align: center;
-
+  font:  "Lato", sans-serif;
+  color: #111;
 }
 
-.homebox {
-    padding: .5vw;
-    font-size: 0;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: flex;
 
-  }
-  .homeflex {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 200px;
-    margin: .5vw;
-  }
-
-  .homeflex img {
-    width: 100%;
-    height: auto;
-  }
-
-  .homeflex p {
-    text-decoration: none;
-    color: #000;
- }
-
-  @media screen and (max-width: 400px) {
-    .homeflex { margin: 0; }
-    .homebox { padding: 0; }
-  }
+  /* different parallax options */
 
 .parallax {
     background-image: url("photos/Utah performing arts/fireproofing/20161007_195340.jpg");
@@ -145,16 +105,94 @@ h2 {
   background-size: cover;
 }
 
-.about {
+.parallax3 {
+  background-image: url("photos/livingplanetaquarium/2014-03-17 17.47.24.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* text over parallax */
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  border-radius: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: .8;
+}
+
+/* home page */
+
+.flexbox {
+    padding: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+
+  }
+  .flex {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+  }
+
+  .flex img {
+    width: 100%;
+    height: auto;
+  }
+
+  .flex p {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+ }
+
+  @media screen and (max-width: 400px) {
+    .flex { margin: 0; }
+    .flexbox { padding: 0; }
+  }
+
+  /*contact on home page */
+
+  .contact-home {
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    height: 300px;
+  }
+
+/* about page */
 
 .list-wrap{
  width:450px;
  margin:0 auto;
+ }
+
+.links {
+  text-align: left;
+  font:  "Lato", sans-serif;
 }
 
-.fireproofing{
-  text-overflow: inherit;
-  text-align: center;
-  padding: 50px 80px;
-}
+/* fire proofing page */
