@@ -11,34 +11,45 @@
 </head>
 <body ng-controller="sprayctrl">
   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Spray-On Solutions</a>
-        </div>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Spray-On Solutions</a>
+      </div>
+      <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="about">About Us</a></li>
-          <li><a ui-sref="fireproofing">Fire Proofing</a></li>
-          <li><a ui-sref="intumescent">Intumescent Paint</a></li>
-          <li><a ui-sref="insulation">Insulation</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ui-sref="portfolio">Projects<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a ui-sref="elizabeth">Elizabeth Academy</a></li>
-              <li><a ui-sref="jvhospital">Jordan Valley Hospital</a></li>
-              <li><a ui-sref="livingplanet">Living Planet Aquarium</a></li>
-              <li><a ui-sref="usurec">USU Rec Center</a></li>
-              <li><a ui-sref="performingarts">Utah Performing Arts Center</a></li>
-            </ul>
-          <li><a ui-sref="contact">Contact Us</a></li>
-          <li style="float:right"><a ui-sref="contact">(435) 884-6708</a></li>
-</li>
+          <li><a ui-sref="home" class="hidden-xs">Home</a>
+          <a ui-sref="home" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Home</a></li>
+          <li><a ui-sref="about" class="hidden-xs">About Us</a>
+          <a ui-sref="about" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">About Us</a></li>
+          <li><a ui-sref="fireproofing" class="hidden-xs">Fire Proofing</a>
+          <a ui-sref="fireproofing" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Fire Proofing</a></li>
+          <li><a ui-sref="intumescent" class="hidden-xs">Intumescent Paint</a>
+            <a ui-sref="intumescent" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Intumescent Paint</a></li>
+          <li><a ui-sref="insulation" class="hidden-xs">Insulation</a>
+          <a ui-sref="insulation" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Insulation</a></li>
+          <li><a ui-sref="portfolio" class="hidden-xs">Projects</a>
+            <a ui-sref="portfolio" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Projects</a></li>
+          <li><a ui-sref="contact" class="hidden-xs">Contact Us</a>
+            <a ui-sref="contact" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Contact Us</a></li>
+          <li><a ui-sref="contact" class="hidden-xs">(435)884-6708</a>
+            <a ui-sref="contact" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">(435)884-6708</a></li>
         </ul>
       </div>
     </nav>
 
 
 <ui-view></ui-view>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 
